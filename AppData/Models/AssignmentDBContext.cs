@@ -32,7 +32,7 @@ namespace AppData.Models
         public DbSet<Anh> Anhs { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=KHOATIT\SQLEXPRESS;Initial Catalog=FIFTY_STORE;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-6PF8R3R\SQLEXPRESS;Initial Catalog=FIFTY_STORE;Integrated Security=True");
         }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
