@@ -61,20 +61,20 @@
                 <form class="row g-3">
                     <div class="col-md-12">
                         <label for="inputName5">Tên khách hàng <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="inputTenKhachHang" placeholder="Nhập tên khách hàng"  autocomplete="off">
+                        <input type="text" class="form-control" id="inputTenKhachHang" placeholder="Nhập tên khách hàng" autocomplete="off">
                     </div>
                     <div class="col-md-12">
                         <label for="inputPassword5">Điện thoại <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" id="inputSDT" placeholder="Nhập số điện thoại"  required>
+                        <input type="number" class="form-control" id="inputSDT" placeholder="Nhập số điện thoại" required>
                     </div>
                     <div class="col-md-12">
                         <label for="inputEmail5">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Nhập email"  autocomplete="off">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Nhập email" autocomplete="off">
                     </div>
 
                     <div class="col-12">
                         <label for="inputAddress5">Địa chỉ</label>
-                        <input type="text" class="form-control" id="inputDiaChi" placeholder="Nhập địa chỉ"  autocomplete="off">
+                        <input type="text" class="form-control" id="inputDiaChi" placeholder="Nhập địa chỉ" autocomplete="off">
                     </div>
                     <div class="col-6">
                         <label for="inputCity">Ngày sinh</label>
@@ -99,7 +99,6 @@
                         </fieldset>
                     </div>
                     <div class="alert alert-danger" role="alert" id="validatekh" style="display:none">
-
                     </div>
                     <div class="d-flex flex-row text-center">
                         <button type="button" class="btn btn-secondary w-50 btn-block m-2" data-bs-dismiss="modal">Bỏ qua</button>
@@ -129,7 +128,7 @@
                 </div>
                 <div class="cell-content">
                     <div class="cell-content-top">
-                        <div class="cell-code text-primary" >@item.MaCTSP</div>
+                        <div class="cell-code text-primary">@item.MaCTSP</div>
                         <div class="cell-name">@item.Ten <span class="badge bg-warning" style="color:#fff; font-weight:600">@item.PhanLoai</span></div>
                     </div>
                     <div class="cell-content-bottom">
@@ -143,12 +142,12 @@
                         @if (item.GiaGoc != item.GiaKM)
                         {
                             <div class="cell-changeprice1">@item.GiaKM.ToString("n0") <span><del style="color:#808080; font-size:14px; margin-left:20px">@item.GiaGoc?.ToString("n0")</del></span></div>
-                            <div class="cell-changeprice2">@((item.GiaKM*item.SoLuong).ToString("n0"))</div>
+                            <div class="cell-changeprice2">@((item.GiaKM * item.SoLuong).ToString("n0"))</div>
                         }
                         else
                         {
                             <div class="cell-changeprice1">@item.GiaKM.ToString("n0") </div>
-                            <div class="cell-changeprice2">@((item.GiaKM*item.SoLuong).ToString("n0"))</div>
+                            <div class="cell-changeprice2">@((item.GiaKM * item.SoLuong).ToString("n0"))</div>
                         }
 
                     </div>
@@ -278,7 +277,7 @@
                     }
                  },
                  error: function(response) {
-                    toastr.error(response.message, 'Error Alert', { timeOut: 300 });       
+                    toastr.error(response.message, 'Error Alert', { timeOut: 300 });
                  }
              });
          }
@@ -358,7 +357,7 @@
              success: function(response) {
                  if(response.success === true){
                     gethdct('@Model.Id');
-                    
+
                  }else{
                     gethdct('@Model.Id');
                     toastr.error(response.message, 'Error Alert', { timeOut: 500 });
@@ -367,7 +366,7 @@
              error: function(response) {
                  gethdct('@Model.Id');
                  toastr.error(response.message, 'Error Alert', { timeOut: 300 });
-                 
+
              }
          });
      }
@@ -423,3 +422,4 @@
     });
 </script>
 
+ 
