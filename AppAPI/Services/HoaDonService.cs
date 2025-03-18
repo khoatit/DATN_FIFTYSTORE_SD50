@@ -465,7 +465,7 @@ namespace AppAPI.Services
                                   KhachHang = kh == null ? "Khách lẻ" : kh.Ten,
                                   NguoiNhan = hd.TenNguoiNhan != null ? hd.TenNguoiNhan : null,
                                   DiaChi = hd.DiaChi != null ? hd.DiaChi : null,
-                                  SĐT = hd.SDT != null ? hd.SDT : null,
+                                  SĐT = kh.SDT != null ? kh.SDT : null,
                                   Email = hd.Email != null ? hd.Email : null,
                                   TienShip = hd.TienShip != null ? hd.TienShip : null,
                                   TrangThai = hd.TrangThaiGiaoHang,
@@ -884,6 +884,8 @@ namespace AppAPI.Services
                 var kh = reposKhachHang.GetAll().FirstOrDefault(c => c.IDKhachHang == lstd.IDKhachHang);
                 kh.DiemTich += hoaDon.DiemTichHD;
                 kh.DiemTich -= hoaDon.DiemSD;
+                update.SDT = kh.SDT;
+
                 reposKhachHang.Update(kh);
             }
             // Trừ số lượng voucher nếu có
