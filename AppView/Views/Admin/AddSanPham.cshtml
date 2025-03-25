@@ -12,12 +12,12 @@
     <div class="col-md-4">
         <form asp-action="AddSanPham" enctype="multipart/form-data">
             <div class="form-group">
-                <label asp-for="Ten" class="control-label"></label>
+                <label asp-for="Ten" class="control-label">Tên sản phẩm</label>
                 <input asp-for="Ten" class="form-control" autocomplete="off" />
                 <span asp-validation-for="Ten" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MoTa" class="control-label"></label>
+                <label asp-for="MoTa" class="control-label">Mô tả</label>
                 <input asp-for="MoTa" class="form-control" autocomplete="off" />
                 <span asp-validation-for="MoTa" class="text-danger"></span>
             </div>
@@ -27,6 +27,15 @@
                 <datalist id="chatLieu"></datalist>
                 <span asp-validation-for="TenChatLieu" class="text-danger"></span>
             </div>
+            
+
+           @*  <div class="form-group">
+                <label class="control-label">Chất liệu</label>
+                <select asp-for="TenChatLieu" class="form-control" asp-items="Model.Ten">
+                    <option value="">-- Chọn chất liệu --</option>
+                </select>
+                <span asp-validation-for="TenChatLieu" class="text-danger"></span>
+            </div> *@
             <div class="form-group">
                 <label class="control-label">Màu sắc</label>
                 <table id="tbmausac" style="width:450px">
