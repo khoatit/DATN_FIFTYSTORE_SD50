@@ -39,7 +39,7 @@
                     <div class="col-sm-7">
                         <label class="col-form-label text-primary">@Model.KhachHang</label>
                     </div>
-                    <label class="col-sm-5 col-form-label">Sdt:</label>
+                    <label class="col-sm-5 col-form-label">Sdt khach hang:</label>
                     <div class="col-sm-7">
                         <label class="col-form-label text-primary">@Model.SĐT</label>
                     </div>
@@ -171,15 +171,15 @@
                             <label class="col-sm-5 col-form-label">@tienhang.ToString("n0")</label>
                         </div>
                     </div>
-                    @if (@Model.lstlstd.Count != 0)
-                    {
-                        <div class="row  text-end">
-                            <label class="col-sm-6 col-form-label">Trừ tiêu điểm:</label>
-                            <div class="col-sm-6">
-                                <label class="col-sm-5 col-form-label">@Model.TruTieuDiem?.ToString("n0")</label>
-                            </div>
-                        </div>
-                    }
+                 @*   // @if (@Model.lstlstd.Count != 0)
+                    // {
+                    //     <div class="row  text-end">
+                    //         <label class="col-sm-6 col-form-label">Trừ tiêu điểm:</label>
+                    //         <div class="col-sm-6">
+                    //             <label class="col-sm-5 col-form-label">@Model.TruTieuDiem?.ToString("n0")</label>
+                    //         </div>
+                    //     </div>
+                    // }*@
 
                     @if (@Model.voucher != null)
                     {

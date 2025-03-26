@@ -66,9 +66,6 @@
     <None Include="Views\QuanLyKM\GetSPByIdKM.cshtml" />
     <None Include="Views\QuanLyKM\GetSPNoKM.cshtml" />
     <None Include="Views\QuanLyKM\Update.cshtml" />
-    <None Include="Views\QuyDoiDiem\Create.cshtml" />
-    <None Include="Views\QuyDoiDiem\GetAllQuyDoiDiem.cshtml" />
-    <None Include="Views\QuyDoiDiem\Updates.cshtml" />
     <None Include="Views\ThongKe\GetAllLSTDByIDKH.cshtml" />
     <None Include="Views\ThongKe\ThongKeDoanhThuTheoNam.cshtml" />
     <None Include="Views\ThongKe\ThongKeDoanhThuTheoNgay.cshtml" />

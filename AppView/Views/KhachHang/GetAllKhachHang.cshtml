@@ -46,8 +46,7 @@
             <th style=" background-color: darkslategray;
     color: white;">Số điện thoại</th>
             <th style=" background-color: darkslategray;
-    color: white;">Điểm tích</th>
-            <th style=" background-color: darkslategray;
+
     color: white;">Trạng thái</th>
             <th style=" background-color: darkslategray;
     color: white;"></th>
@@ -89,9 +88,9 @@
                 <td>
                     @item.SDT
                 </td>
-                <td>
-                    <div style="color:green"> @item.DiemTich</div>
-                </td>
+                @* <td> *@
+                @*     <div style="color:green"> @item.DiemTich</div> *@
+                @* </td> *@
                 <td>
                     @if (item.TrangThai == 0)
                     {

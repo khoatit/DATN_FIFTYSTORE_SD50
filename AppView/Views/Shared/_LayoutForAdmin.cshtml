@@ -132,7 +132,7 @@
                             <!--Lam thêm  start-->
                        
                             <!--Lam thêm end-->
-
+                            
                             <li class="nav-item">
                                 <a class="nav-link collapsed" asp-controller="BanHangTaiQuay" asp-action="BanHang">
                                     <i class="bi bi-shop-window"></i><span>Bán hàng</span>
@@ -204,36 +204,42 @@
                                             <i class="bi bi-circle"></i><span>Quản lý chất liệu</span>
                                         </a>
                                     </li>
-                                    <li>
+                                @*    <li>
 
                                         <a asp-controller="LoaiSP" asp-action="Show">
 
 
                                             <i class="bi bi-circle"></i><span>Quản lý loại sản phẩm </span>
                                         </a>
-                                    </li>
+                                    </li>*@
                                 </ul>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link " asp-controller="ThongKe" asp-action="ThongKeAdmin">
+                                    <i class="bi bi-bar-chart-line"></i>
+                                    <span>Thống kê</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse">
-                                    <i class="bi bi-layout-text-window-reverse"></i><span>Quản lý các loại khuyến mãi</span><i class="bi bi-chevron-down ms-auto"></i>
+                                    <i class="bi bi-layout-text-window-reverse"></i><span>Quản lý khuyến mãi</span><i class="bi bi-chevron-down ms-auto"></i>
                                 </a>
                                 <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                                    <li>
+                              @*      <li>
                                         <a asp-controller="QuanLyKM" asp-action="GetAllKM">
                                             <i class="bi bi-circle"></i><span>Khuyến mãi theo sản phẩm</span>
                                         </a>
-                                    </li>
+                                    </li>*@
                                     <li>
                                         <a asp-controller="Vouchers" asp-action="GetAllVoucher">
                                             <i class="bi bi-circle"></i><span>Quản lý Voucher</span>
                                         </a>
                                     </li>
-                                    <li>
+                                   @* <li>
                                         <a asp-controller="QuyDoiDiem" asp-action="GetAllQuyDoiDiem">
                                             <i class="bi bi-circle"></i><span>Quản lý quy đổi điểm</span>
                                         </a>
-                                    </li>
+                                    </li>*@
                                 </ul>
                             </li><!-- End Tables Nav -->
 
