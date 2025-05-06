@@ -111,7 +111,7 @@
                     <span class="checkbox">
                         <i class="fa-solid fa-check check-icon" data-value="0"></i>
                     </span>
-                    <span class="item-text">Website</span>
+                    <span class="item-text">Online</span>
                 </li>
             </ul>
         </div>
@@ -301,7 +301,7 @@
                                <td>${new Date(response.data[i].thoiGian).toLocaleString("en-GB")}</td>
                                <td>${response.data[i].khachHang}</td>
                                <td>${response.data[i].sdtkh}</td>
-                               ${response.data[i].loaiHD === 1 ? `<td class="text-center">Tại quầy</td>` : `<td class="text-center">Website</td>`}
+                               ${response.data[i].loaiHD === 1 ? `<td class="text-center">Tại quầy</td>` : `<td class="text-center">Online</td>`}
                             
                                 <td class="text-end">${Intl.NumberFormat().format(response.data[i].tongTienHang)}</td>
                                    <td>
