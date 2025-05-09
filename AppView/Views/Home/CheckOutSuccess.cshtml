@@ -44,7 +44,8 @@
                 <table style="width:100%" class="table">
                     <thead>
                         <tr>
-                            <th>Sản phẩm</th>
+                         
+                            <th>Tên sản phẩm</th>
                             <th style="text-align:center">Giá bán</th>
                             <th style="text-align:center">Số lượng</th>
                             <th style="text-align:center">Tổng cộng</th>
@@ -54,6 +55,7 @@
                         @foreach (var item in Model.GioHangs)
                         {
                             <tr>
+								<td class="cart__price" style="text-align:center">@item.</td>
                                 <td class="product__cart__item">
                                     <div class="product__cart__item__pic">
                                         <img style="height:60px;width:50px" src="/img/product/@item.Anh" alt="">
