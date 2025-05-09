@@ -344,7 +344,8 @@
         {
         <div style="text-align:-webkit-right ;">
                 <div style="border: none; color: white; background-color: black; text-align:center;width: 150px; height: 50px; display: grid; align-items: center;">
-                    <a style="color:white;" asp-controller="Home" asp-action="HuyDonHang" asp-route-idHoaDon="@Model.First().ID">Hủy đơn hàng</a>
+                    <a onclick="return confirm('Bạn có chắc muốn hủy đơn hàng này không?')" style="color:white;" asp-controller="Home" asp-action="HuyDonHang" asp-route-idHoaDon="@Model.First().ID">Hủy đơn hàng</a>
+
                 </div>
             </div>
         }
@@ -352,14 +353,14 @@
         {
             <div style="text-align:-webkit-right ;">
                 <div style="border: none; color: white; background-color: black; text-align:center;width: 150px; height: 50px; display: grid; align-items: center;">
-                    <a style="color:white;" asp-controller="Home" asp-action="DoiTraHang" asp-route-idHoaDon="@Model.First().ID">Hoàn hàng</a>
+                    <a onclick="return confirm('Bạn có chắc muốn hoàn hàng đơn hàng này không?')" style="color:white;" asp-controller="Home" asp-action="DoiTraHang" asp-route-idHoaDon="@Model.First().ID">Hoàn hàng</a>
                 </div>
             </div>
         }else if (trangthaiGiaoHang == 8)
         {
             <div style="text-align:-webkit-right ;">
                 <div style="border: none; color: white; background-color: black; text-align:center;width: 150px; height: 50px; display: grid; align-items: center;">
-                    <a style="color:white;" asp-controller="Home" asp-action="HoanTacHuyDonHang" asp-route-idHoaDon="@Model.First().ID">Hoàn tác hủy đơn hàng</a>
+                    <a onclick="return confirm('Bạn có chắc muốn hoàn tác hủy đơn hàng này không?')" style="color:white;" asp-controller="Home" asp-action="HoanTacHuyDonHang" asp-route-idHoaDon="@Model.First().ID">Hoàn tác hủy đơn hàng</a>
                 </div>
             </div>
         }
@@ -367,7 +368,7 @@
         {
             <div style="text-align:-webkit-right ;">
                 <div style="border: none; color: white; background-color: black; text-align:center;width: 150px; height: 50px; display: grid; align-items: center;">
-                    <a style="color:white;" asp-controller="Home" asp-action="HoanTacDoiTraHang" asp-route-idHoaDon="@Model.First().ID">Hoàn tác hoàn hàng</a>
+                    <a onclick="return confirm('Bạn có chắc muốn hủy hoàn hàng đơn hàng này không?')" style="color:white;" asp-controller="Home" asp-action="HoanTacDoiTraHang" asp-route-idHoaDon="@Model.First().ID">Hoàn tác hoàn hàng</a>
                 </div>
             </div>
         }
